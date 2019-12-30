@@ -9,10 +9,6 @@
       <root url="jar://$PROJECT_DIR$/lib/saaj.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/axis.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/jaxrpc.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/ojdbc8.jar!/" />
-      <root url="jar://$USER_HOME$/Documents/카카오톡 받은 파일/common/commons-collections4-4.4.jar!/" />
-      <root url="jar://$USER_HOME$/Documents/카카오톡 받은 파일/common/commons-dbcp2-2.7.0.jar!/" />
-      <root url="jar://$USER_HOME$/Documents/카카오톡 받은 파일/common/commons-pool2-2.8.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

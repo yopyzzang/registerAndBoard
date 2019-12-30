@@ -57,7 +57,7 @@
         <tr>
             <td align="right">우편번호&nbsp;&nbsp;  </td>
             <td><input type="text" name="zipcode"/>
-                <input type="button" value="찾기" onclick="this"/></td>
+                <input type="button" value="찾기" onClick="zipCheck()"/></td>
         </tr>
         <tr>
             <td align="right">주소1&nbsp;&nbsp;  </td>
@@ -69,7 +69,7 @@
         </tr>
         <tr>
             <td colspan="2" align="center">
-                <input type="button" value="회원가입" onclick="this"/>&nbsp;&nbsp;
+                <input type="button" value="회원가입" onclick="inputCheck()"/>&nbsp;&nbsp;
                 <input type="reset" value="다시입력"/>
             </td>
         </tr>
