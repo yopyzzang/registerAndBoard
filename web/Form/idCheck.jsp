@@ -1,4 +1,4 @@
-<%--
+<%@ page import="member.StudentDAO" %><%--
   Created by IntelliJ IDEA.
   User: itbank
   Date: 2019-12-30
@@ -7,7 +7,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<jsp:useBean id="dao" class="member.StudentDAO"/>
+<%
+    StudentDAO dao = StudentDAO.getInstance();
+%>
 <%
     String id = request.getParameter("id");
     boolean check = dao.idCheck(id);

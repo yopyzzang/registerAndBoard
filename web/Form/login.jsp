@@ -6,12 +6,35 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String loginID = (String)session.getAttribute("loginID");
+%>
 <html>
 <head>
     <title>LOGIN</title>
 </head>
 <body>
-<form method="post" action="#">
+<%
+    if(loginID!=null) {
+%>
+<table border="1" width="300">
+    <tr><td colspan="3" align="center">
+        <%=loginID%>님 환영합니다.
+    </td> </tr>
+    <tr>
+        <td align="center" width="100">
+            <a href="modifyForm.jsp">정보수정</a>
+        </td>
+        <td align="center" width="100">
+            <a href="deleteForm.jsp">회원탈퇴</a>
+        </td>
+        <td align="center" width="100">
+            <a href="logout.jsp">로그아웃</a>
+        </td>
+    </tr>
+</table>
+<%}else{%>
+<form method="post" action="loginProc.jsp">
     <table width="300" border="1">
         <tr>
             <td colspan="2" align="center">회원 로그인</td>
@@ -37,4 +60,5 @@
 </form>
 
 </body>
+<%}%>
 </html>
