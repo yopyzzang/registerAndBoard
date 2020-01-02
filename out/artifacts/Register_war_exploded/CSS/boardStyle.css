@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+A:link{text-decoration: none; color: darkorange}
+A:hover{color: orangered}
+A:visited{text-decoration: none; color: blueviolet}

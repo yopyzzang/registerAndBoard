@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<% request.setCharacterEncoding("euc-kr");%>
+<% request.setCharacterEncoding("UTF-8");%>
 <%
     StudentDAO dao = StudentDAO.getInstance();
 %>
