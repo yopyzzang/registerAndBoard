@@ -56,19 +56,19 @@
             <tr>
                 <td align="center" width="125">글내용</td>
                 <td align="left" width="375" colspan="3">
-                    <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=article.getContent()%></pre>
+                    <pre><%=article.getContent()%></pre>
                 </td>
             </tr>
             <tr height="30">
                 <td colspan="4" align="right">
-                    <input type="button" value="수정"
-                    onclick="document.location.href='updateForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>">
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="button" value="삭제"
-                           onclick="document.location.href='deleteForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>">
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="button" value="목록"
-                    onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>">
+                    <input type="button" value="수정" style="margin-right: 10px"
+                    onclick="document.location.href='updateForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
+
+                    <input type="button" value="삭제" style="margin-right: 10px"
+                           onclick="document.location.href='deleteForm.jsp?num=<%=article.getNum()%>&pageNum=<%=pageNum%>'">
+
+                    <input type="button" value="목록" style="margin-right: 10px"
+                    onclick="document.location.href='list.jsp?pageNum=<%=pageNum%>'">
                 </td>
             </tr>
         </table>
